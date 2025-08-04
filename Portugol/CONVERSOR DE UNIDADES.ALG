@@ -1,22 +1,22 @@
 Algoritmo "Conversor de unidades"
-// Disciplina   : [Linguagem e Lógica de Programação]
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
 // Professor   : Antonio Carlos Nicolodi
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 25/07/2025
 Var
-   // Seção de Declarações das variáveis
+   // SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
    esp,msg,m1c,m2c:caracter
    ri,r1,r2,r1c,r2c:inteiro
    R1c2,R2c2,R3c2: real
    V1Bc,V2Bc: real
 
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
+   // SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc...
    esp <- "--------------------------------"
    msg <- "|Conversor de unidades iniciado|"
    Escreval("Este conversor de unidades pode calcular todas as medidas ")
-   Escreval("Selecione a opção de medidas a converter (acompanhadas da")
+   Escreval("Selecione a opÃ§Ã£o de medidas a converter (acompanhadas da")
    Escreval("unidade principal no S.I.")
 
 
@@ -33,21 +33,21 @@ Inicio
    Escreval(" 1- Comprimento: Metro (m)")
    Escreval(" 2- Massa: Quilograma (kg)               |")
    Escreval(" 3- Tempo: Segundo (s)                   |")
-   Escreval(" 4- Corrente Elétrica: Ampère (A)        |")
-   Escreval(" 5- Temperatura Termodinâmica: Kelvin (K)|")
-   Escreval(" 6-Qnt. d Substância:Mol (mol)           |")
+   Escreval(" 4- Corrente ElÃ©trica: AmpÃ¨re (A)        |")
+   Escreval(" 5- Temperatura TermodinÃ¢mica: Kelvin (K)|")
+   Escreval(" 6-Qnt. d SubstÃ¢ncia:Mol (mol)           |")
    Escreval(" 7- Intensidade Luminosa: Candela (cd)   |")
    Escreval("**----------------------**---------**----------**-|")
    Escreval("                   Unidades de Medida Derivadas (Exemplos):    |")
    Escreval("")
-   Escreval(" 8-  Volume: Metro cúbico (m³)           |")
-   Escreval(" 9- Área: Metro quadrado (m²)            |")
+   Escreval(" 8-  Volume: Metro cÃºbico (mÂ³)           |")
+   Escreval(" 9- Ãrea: Metro quadrado (mÂ²)            |")
    Escreval(" 10- Velocidade: Metro por segundo (m/s) |")
-   Escreval("11- Força: Newton (N)                    |")
+   Escreval("11- ForÃ§a: Newton (N)                    |")
    Escreval("12-Energia: Joule (J)                    |")
-   Escreval("13- Potência: Watt (W)                   |")
+   Escreval("13- PotÃªncia: Watt (W)                   |")
    Escreval("Digite 14 para sair")
-   //Repetição caso erro
+   //RepetiÃ§Ã£o caso erro
    repita
       //Mensagem de erro
       Escreval ("R: ")
@@ -55,7 +55,7 @@ Inicio
 
 
       Se (ri<1) e (ri>13) entao
-         escreval("Opção inválida, selecione uma opção válida")
+         escreval("OpÃ§Ã£o invÃ¡lida, selecione uma opÃ§Ã£o vÃ¡lida")
       fimse
 
 
@@ -68,7 +68,7 @@ fimse
 
 ate (ri>=1) e (ri<=14)
 
-//Opções resultantes de cada opção
+//OpÃ§Ãµes resultantes de cada opÃ§Ã£o
 
 
 
@@ -84,18 +84,18 @@ limpatela
 escreval ("Converter medidas de comprimento!!")
 
 
-//Condição de erro
+//CondiÃ§Ã£o de erro
 repita
    escreval("De:")
-   escreval("1- Metro(m) 2-Quilómetro(Km) 3.Hectómetro(hm) 4.Decâmetro(dm)")
-   escreval("5.Decimetro(dcm)   6.Centimetro(cm)  7.Milímetro(mm)   8.sair")
+   escreval("1- Metro(m) 2-QuilÃ³metro(Km) 3.HectÃ³metro(hm) 4.DecÃ¢metro(dm)")
+   escreval("5.Decimetro(dcm)   6.Centimetro(cm)  7.MilÃ­metro(mm)   8.sair")
 
 
 
    Leia (r1c)
    Se (r1c<1) ou (r1c>8) entao
       limpatela
-      escreval("Opção anterior iválida, selecione uma das abaixo exibidas")
+      escreval("OpÃ§Ã£o anterior ivÃ¡lida, selecione uma das abaixo exibidas")
    fimSe
 fimfuncao
 
@@ -106,15 +106,15 @@ ate (r1c >=1) e (r1c <= 8)
 
 
 
-//Condição de erro
+//CondiÃ§Ã£o de erro
 repita
    escreval("Para:")
-   escreval("1. Metro(m) 2.Quilómetro(Km) 3.Hectómetro(hm) 4.Decâmetro(dm)")
-   escreval("5.Decimetro(dcm)             6.Centimetro(cm) 7.Milímetro(mm)")
+   escreval("1. Metro(m) 2.QuilÃ³metro(Km) 3.HectÃ³metro(hm) 4.DecÃ¢metro(dm)")
+   escreval("5.Decimetro(dcm)             6.Centimetro(cm) 7.MilÃ­metro(mm)")
    Leia (r2c)
    Se (r2c<1) ou (r2c>7) entao
       limpatela
-      escreval("Opção anterior iválida, selecione uma das abaixo exibidas")
+      escreval("OpÃ§Ã£o anterior ivÃ¡lida, selecione uma das abaixo exibidas")
    fimSe
 ate (r2c >0) e (r2c < 8)
 
@@ -126,27 +126,27 @@ Se (r1c = 1 ) entao
    V1Bc <- 1
 fimSe
 Se (r1c = 2 ) entao
-   m1c <- "Quilómetros (Km)"
+   m1c <- "QuilÃ³metros (Km)"
    V1Bc <- 1000
 fimSe
 Se (r1c = 3 ) entao
-   m1c <- "Hectómetros (hm)"
+   m1c <- "HectÃ³metros (hm)"
    V1Bc <- 100
 fimSe
 Se (r1c = 4 ) entao
-   m1c <- "Decâmetros (dam)"
+   m1c <- "DecÃ¢metros (dam)"
    V1Bc <- 10
 fimSe
 Se (r1c = 5 ) entao
-   m1c <- "Decímetros (dcm)"
+   m1c <- "DecÃ­metros (dcm)"
    V1Bc <- 0.1
 fimSe
 Se (r1c = 6 ) entao
-   m1c <- "Centímetros (cm)"
+   m1c <- "CentÃ­metros (cm)"
    V1Bc <- 0.01
 fimSe
 Se (r1c = 7 ) entao
-   m1c <- "Milímetros (mm)"
+   m1c <- "MilÃ­metros (mm)"
    V1Bc <- 0.001
 fimSe
 
@@ -158,27 +158,27 @@ Se (r2c = 1 ) entao
    V2Bc <- 1
 fimSe
 Se (r2c = 2 ) entao
-   m2c <- "Quilómetros (Km)"
+   m2c <- "QuilÃ³metros (Km)"
    V2Bc <- 0.001
 fimSe
 Se (r2c = 3 ) entao
-   m2c <- "Hectómetros (hm)"
+   m2c <- "HectÃ³metros (hm)"
    V2Bc <- 0.01
 fimSe
 Se (r2c = 4 ) entao
-   m2c <- "Decâmetros (dam)"
+   m2c <- "DecÃ¢metros (dam)"
    V2Bc <- 0.1
 fimSe
 Se (r2c = 5 ) entao
-   m2c <- "Decímetros (dcm)"
+   m2c <- "DecÃ­metros (dcm)"
    V2Bc <- 10
 fimSe
 Se (r2c = 6 ) entao
-   m2c <- "Centímetros (cm)"
+   m2c <- "CentÃ­metros (cm)"
    V2Bc <- 100
 fimSe
 Se (r2c = 7 ) entao
-   m2c <- "Milímetros (mm)"
+   m2c <- "MilÃ­metros (mm)"
    V2Bc <- 1000
 fimSe
 
@@ -203,7 +203,7 @@ R3c2 <- R2c2 * V2Bc
 
 //Escreve o resultado
 Escreva(R1c2," ",m1c," equivalem a ",R3c2," ",m2c)
-// Fim do "Se for a opção 1" // fimse
+// Fim do "Se for a opÃ§Ã£o 1" // fimse
 
 
 
