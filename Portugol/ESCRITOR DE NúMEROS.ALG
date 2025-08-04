@@ -1,15 +1,15 @@
-Algoritmo "Escritor de números"
-// Disciplina   : [Linguagem e Lógica de Programação]
+Algoritmo "Escritor de nÃºmeros"
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
 // Professor   : Gustavo Guanabara
-// Descrição   : Este algoritmo escreve todos os números num intervalo de 1 a 30
+// DescriÃ§Ã£o   : Este algoritmo escreve todos os nÃºmeros num intervalo de 1 a 30
 // Autor(a)    : Dario de Almeida
 // Data atual  : 27/07/2025
 Var
-// Seção de Declarações das variáveis 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
 i: inteiro
 esp,msg:caracter
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
 esp <- "---------------------------------"
 msg <- "Programa iniciado"
 escreval(esp)
